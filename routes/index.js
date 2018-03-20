@@ -1,10 +1,10 @@
-// var express = require('express');
-// var router = express.Router();
-// var db = require("../db")
+var express = require('express');
+var router = express.Router();
+var db = require("../models")
 
-// /* GET home page. */
-// router.get('/', function(req, res, next) {
-//   res.render('home', { title: 'Express' });
-// });
+/* GET home page. */
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'Express' });
+});
 
-// module.exports = router;
+module.exports = router;
